@@ -450,7 +450,9 @@ this.direct = function () {
                     if (res.data.messages) {
                         cursors['messages'] = res.data.cursor;
 
-                        messages[0] = messages[0].concat(res.data.messages);
+                        if (messages[0]) messages[0] = messages[0].concat(res.data.messages);
+
+                        else messages[0] = []
 
                         console.log('refreshChat2');
 
@@ -461,6 +463,7 @@ this.direct = function () {
                 } else {
                     popupInfo('error', global_checking_account, localError(res.data) + ' (' + parent.accname + ')', global_close);
                 }
+                console.log('Новые сообщения', res.data.messages)
                 $(".loader-backdrop").hide();
             },
             cursors['messages']

@@ -10,5 +10,5 @@
 Тестовый сервер 209.97.191.119
 (SSH login) deploy
 (SSH pass) deploy987
-(PATH) /var/www/stivi/
+(PATH) cd /var/www/stivi/
 (Public host) https://newstiv.insaev.ru

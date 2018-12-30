@@ -21,8 +21,10 @@ this.unblock = function(){
     }
     function fillAccountsList(resp){
         for(var i in accountsArr){
-            if(typeof accountsArr[i].challenge == 'object')
+            if(typeof accountsArr[i].challenge == 'object') {
+                if (accountsArr[i].phone === 'undefined') accountsArr[i].phone = 'Не указан'
                 accList.table.addTr(accountsArr[i]._id, accountsArr[i].id, accountsArr[i].phone, accountsArr[i]._id);
+            }
         }
     }
     /*ajax('account/checkpoint', {}, 'get', function(resp){

@@ -103,6 +103,11 @@
                         text = '[Видео уже просмотрено]'
 
                     break;
+
+                    case 'story_share':
+                        if (props.item.story_share.message === 'No longer available') text = '[История больше недоступна]'
+                    break;
+
                     case 'reel_share':
                         
                         if (props.item.reel_share.type === 'mention') {

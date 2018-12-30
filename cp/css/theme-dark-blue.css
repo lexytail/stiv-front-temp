@@ -811,10 +811,12 @@
     border-color: #2196F3;
     background-color: #2196F3; }
 
+/*
 .dark-blue a {
   color: #2196F3; }
   .dark-blue a:focus, .dark-blue a:hover {
     color: #0c7cd5; }
+*/
 .dark-blue a.text-primary {
   color: #2196F3 !important; }
   .dark-blue a.text-primary:focus, .dark-blue a.text-primary:hover {
